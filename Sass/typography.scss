@@ -1,0 +1,39 @@
+
+
+// scss-docs-start theme-color-variables
+$primary:  white;
+$info:     #D6644A;
+$warning:  #EC151D;
+$lightbg:  #1E1E1E;
+$darkbg:   #131313;
+// scss-docs-end theme-color-variables
+
+
+$theme-colors: (
+  "primary":    $primary,
+  "info":       $info,
+  "warning":    $warning,
+  "lightbg":      $lightbg,
+  "darkbg":       $darkbg
+) ;
+
+$font-family-sans-serif : 'Roboto', sans-serif;
+$font-family-monospace: 'Oswald', sans-serif;
+
+
+h1,h2,h3,h4,h5,h6{
+  font-family: $font-family-monospace;
+}
+
+p{
+  font-family: $font-family-sans-serif;
+  font-size: 0.87rem; //14px
+}
+ul{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+a{
+  text-decoration: none;
+}

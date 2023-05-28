@@ -1,0 +1,18 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.87rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}/*# sourceMappingURL=typography.css.map */
