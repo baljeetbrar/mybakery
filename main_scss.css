@@ -25,12 +25,11 @@ a {
   .info-list > li {
     display: none !important;
   }
-  .navbar-toggle {
-    display: block !important;
-    border: 1px solid gray;
-  }
   .navbarlist {
     display: none !important;
+  }
+  .side-gutter {
+    padding: 0px 30px !important;
   }
 }
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -40,12 +39,11 @@ a {
   .info-list > li {
     display: none !important;
   }
-  .navbar-toggle {
-    display: block !important;
-    border: 1px solid gray;
-  }
   .navbarlist {
     display: none !important;
+  }
+  .side-gutter {
+    padding: 0px 18px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -207,36 +205,4 @@ a {
   display: inline-block;
   text-transform: uppercase;
   font-size: 15px;
-}
-
-.navbar-toggle {
-  display: none;
-  position: relative;
-  float: right;
-  padding: 9px 10px;
-  margin-top: 8px;
-  margin-right: 15px;
-  margin-bottom: 8px;
-  background-color: transparent;
-  background-image: none;
-  border: 1px solid transparent;
-  border-radius: 4px;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  border: 0;
-}
-
-.navbar-toggle .icon-bar {
-  display: block;
-  width: 23px;
-  height: 2px;
-  border-radius: 1px;
 }/*# sourceMappingURL=main_scss.css.map */

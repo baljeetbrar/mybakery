@@ -28,12 +28,12 @@ xxl: 1320px
     .info-list>li {
         display: none !important;
     }
-    .navbar-toggle{
-        display: block !important;
-        border: 1px solid gray;
-    }
+    
     .navbarlist{
         display: none !important;
+    }
+    .side-gutter {
+        padding: 0px 30px !important;
     }
 }
 
@@ -45,12 +45,12 @@ xxl: 1320px
     .info-list>li {
         display: none !important;
     }
-    .navbar-toggle{
-        display: block !important;
-        border: 1px solid gray;
-    }
+    
     .navbarlist{
         display: none !important;
+    }
+    .side-gutter {
+        padding: 0px 18px !important;
     }
  }
 
