@@ -1,1 +1,242 @@
-/*# sourceMappingURL=main_scss.css.map */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.87rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (max-width: 575.98px) {
+  .info-list {
+    padding-top: 45px !important;
+  }
+  .info-list > li {
+    display: none !important;
+  }
+  .navbar-toggle {
+    display: block !important;
+    border: 1px solid gray;
+  }
+  .navbarlist {
+    display: none !important;
+  }
+}
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .info-list {
+    padding-top: 45px !important;
+  }
+  .info-list > li {
+    display: none !important;
+  }
+  .navbar-toggle {
+    display: block !important;
+    border: 1px solid gray;
+  }
+  .navbarlist {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .side-gutter {
+    padding: 0px 5px !important;
+  }
+  .navbarlist > li {
+    padding: 30px 5px;
+    font-size: 12px !important;
+  }
+  .nav-logo {
+    width: 25% !important;
+  }
+  .navbarlist-wrapper {
+    width: 75%;
+  }
+  .navbar-brand img {
+    width: 100%;
+  }
+  .topbar-outer {
+    padding-left: 11% !important;
+  }
+  .topbar-left li {
+    display: flex;
+    width: 50% !important;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .email-icon {
+    padding-left: 20px;
+  }
+  .email-icon::before {
+    left: 11px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navbarlist > li {
+    padding: 30px 18px;
+  }
+  .topbar-left li {
+    width: 37% !important;
+  }
+  .email-icon::before {
+    left: -18px !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .navbarlist > li {
+    padding: 30px 20px;
+  }
+  .email-icon::before {
+    left: -14px !important;
+  }
+}
+@media (min-width: 1401px) and (max-width: 2000px) {
+  .navbarlist > li {
+    padding: 30px 24px;
+  }
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.87rem;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.side-gutter {
+  padding: 0px 60px;
+}
+
+.topbar-left ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+}
+.topbar-left li {
+  display: flex;
+  width: 25%;
+}
+
+.info-list {
+  padding-top: 10px;
+  line-height: 1.5;
+}
+
+.topbar-outer {
+  background: #131313;
+  margin-bottom: 10px;
+  padding-left: 17%;
+}
+
+.info {
+  color: #D6644A !important;
+}
+
+.contact {
+  color: white;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.email-icon {
+  position: relative;
+}
+
+.email-icon i {
+  color: #D6644A;
+}
+
+.email-icon::before {
+  content: "|";
+  color: #8c8787;
+  position: absolute;
+  left: -38px;
+}
+
+.navbar-menu {
+  background-color: white;
+}
+
+.nav-logo {
+  width: 30%;
+}
+
+.navbarlist-wrapper {
+  width: 70%;
+}
+
+.navbar-brand {
+  display: inline-block;
+}
+
+.navbarlist > li > a {
+  color: black;
+}
+
+.navbarlist {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  align-self: center;
+}
+
+.navbarlist > li {
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.navbar-toggle {
+  display: none;
+  position: relative;
+  float: right;
+  padding: 9px 10px;
+  margin-top: 8px;
+  margin-right: 15px;
+  margin-bottom: 8px;
+  background-color: transparent;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 23px;
+  height: 2px;
+  border-radius: 1px;
+}/*# sourceMappingURL=main_scss.css.map */

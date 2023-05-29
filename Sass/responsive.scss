@@ -1,7 +1,7 @@
 $grid-columns: 12;
 $grid-gutter-width: 1.5rem;
 $grid-row-columns: 6;
-$gutters: $spacers;
+
 
 $grid-breakpoints: (
 xs: 0,
@@ -19,3 +19,103 @@ lg: 960px,
 xl: 1140px,
 xxl: 1320px
 );
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    .info-list{
+        padding-top: 45px !important;
+    }
+    .info-list>li {
+        display: none !important;
+    }
+    .navbar-toggle{
+        display: block !important;
+        border: 1px solid gray;
+    }
+    .navbarlist{
+        display: none !important;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .info-list{
+        padding-top: 45px !important;
+    }
+    .info-list>li {
+        display: none !important;
+    }
+    .navbar-toggle{
+        display: block !important;
+        border: 1px solid gray;
+    }
+    .navbarlist{
+        display: none !important;
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .side-gutter {
+        padding: 0px 5px !important;
+    }
+    .navbarlist>li{
+        padding: 30px 5px;
+        font-size: 12px !important;
+    }
+    .nav-logo {
+        width: 25% !important;
+    }
+    .navbarlist-wrapper {
+        width: 75% ;
+    }
+    .navbar-brand img{
+        width: 100%;
+      }
+      .topbar-outer {
+        padding-left: 11% !important;
+    }
+      .topbar-left li {
+        display: flex;
+        width: 50% !important;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    .email-icon{
+        padding-left: 20px;
+    }
+    .email-icon::before {
+        left: 11px !important;
+    }
+   
+    
+ }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .navbarlist > li {
+        padding: 30px 18px;
+      }
+      .topbar-left li {
+        width: 37% !important;  
+    }
+    .email-icon::before {
+        left: -18px !important;
+    }
+      
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px)and (max-width: 1400px) {
+    .navbarlist > li {
+      padding: 30px 20px;
+    }
+    .email-icon::before {
+        left: -14px !important;
+    }
+}
+@media (min-width: 1401px)and (max-width: 2000px) {
+    .navbarlist > li {
+      padding: 30px 24px;
+    }
+}

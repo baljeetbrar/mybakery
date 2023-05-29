@@ -1,0 +1,60 @@
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbarlist > li {
+    padding: 30px 5px;
+    font-size: 12px !important;
+  }
+
+  .nav-logo {
+    width: 25% !important;
+  }
+
+  .navbarlist-wrapper {
+    width: 75%;
+  }
+
+  .navbar-brand img {
+    width: 100%;
+  }
+
+  .topbar-outer {
+    padding-left: 11% !important;
+  }
+
+  .topbar-left li {
+    display: flex;
+    width: 50% !important;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .email-icon {
+    padding-left: 20px;
+  }
+
+  .email-icon::before {
+    left: 11px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navbarlist > li {
+    padding: 30px 18px;
+  }
+
+  .topbar-left li {
+    width: 37% !important;
+  }
+
+  .email-icon::before {
+    left: 18px !important;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .navbarlist > li {
+    padding: 30px 20px;
+  }
+}
+@media (min-width: 1401px) and (max-width: 2000px) {
+  .navbarlist > li {
+    padding: 30px 24px;
+  }
+}
