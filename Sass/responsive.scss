@@ -45,13 +45,35 @@ xxl: 1320px
     .info-list>li {
         display: none !important;
     }
-    
-    .navbarlist{
-        display: none !important;
-    }
     .side-gutter {
         padding: 0px 18px !important;
     }
+    .icon-bar,
+    .navbar-toggle-menu{
+    display: block !important;
+    }
+    .navbarlist{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        top: 60px;
+        right: -74px;
+        width: 300px;
+        height: 100px;
+        padding-top: 65px;
+        position: fixed;
+
+    } 
+    .navbarlist>li{
+        width: 100%;
+    }
+    .navbarlist>li>a{
+        padding: 30px;
+        font-size: 13px;
+        box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+    }
+    
+    
  }
 
 // Medium devices (tablets, 768px and up)
@@ -87,8 +109,13 @@ xxl: 1320px
     .email-icon::before {
         left: 11px !important;
     }
-   
-    
+    .mega-menu li {
+        width: 28% !important;
+    }
+    .mega-menu > li > div > a {
+        width: 65% !important;
+        padding: 10px 0px 10px 4px !important;
+    }
  }
 
 // Large devices (desktops, 992px and up)

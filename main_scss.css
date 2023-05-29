@@ -39,11 +39,31 @@ a {
   .info-list > li {
     display: none !important;
   }
-  .navbarlist {
-    display: none !important;
-  }
   .side-gutter {
     padding: 0px 18px !important;
+  }
+  .icon-bar,
+  .navbar-toggle-menu {
+    display: block !important;
+  }
+  .navbarlist {
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+    top: 60px;
+    right: -74px;
+    width: 300px;
+    height: 100px;
+    padding-top: 65px;
+    position: fixed;
+  }
+  .navbarlist > li {
+    width: 100%;
+  }
+  .navbarlist > li > a {
+    padding: 30px;
+    font-size: 13px;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1);
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -77,6 +97,13 @@ a {
   }
   .email-icon::before {
     left: 11px !important;
+  }
+  .mega-menu li {
+    width: 28% !important;
+  }
+  .mega-menu > li > div > a {
+    width: 65% !important;
+    padding: 10px 0px 10px 4px !important;
   }
 }
 @media (min-width: 992px) and (max-width: 1199.98px) {
@@ -205,4 +232,105 @@ a {
   display: inline-block;
   text-transform: uppercase;
   font-size: 15px;
+}
+
+.mega-menu {
+  display: none;
+  list-style: disc;
+  width: 100%;
+  position: absolute;
+  left: -27px;
+  background: #fff url(Images/combos_pic-1.jpg) no-repeat right 0px bottom -10px;
+  max-width: 1163px;
+  right: 0px !important;
+  margin: 0px auto;
+  border-radius: 0px;
+  padding: 30px 45px 30px;
+  box-shadow: 0px 0px 3px 4px rgba(0, 0, 0, 0.06);
+}
+
+.mega-menu li {
+  width: 30%;
+  float: left;
+}
+
+.mega-menu > li > div > a {
+  width: 70%;
+  display: table;
+  border-bottom: 1px solid #d6d1d1;
+  padding: 10px 0 10px 17px;
+  font-family: Raleway;
+  font-size: 13px;
+  font-weight: bold;
+  color: #666;
+  text-transform: none;
+  position: relative !important;
+}
+
+.hover-menu:hover .mega-menu {
+  display: block;
+}
+
+.icon-bar {
+  position: relative;
+  width: 30px;
+  height: 4px;
+  background-color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.icon-bar::before,
+.icon-bar::after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  right: 0;
+  background: #fff;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.icon-bar:before {
+  top: -10px;
+  width: 20px;
+}
+
+.icon-bar:after {
+  top: 10px;
+  width: 25px;
+}
+
+.navbar-toggle-menu {
+  position: absolute;
+  width: 58px;
+  height: 48px;
+  z-index: 3px;
+  cursor: pointer;
+  opacity: 1;
+  right: 100px;
+  top: 70px;
+}
+
+.icon-bar,
+.navbar-toggle-menu {
+  display: none;
+}
+
+.navbarlist-wrapper button:checked ~ .icon-bar {
+  background: transparent;
+}
+
+.navbarlist-wrapper button:checked ~ .icon-bar:before {
+  top: 0;
+  transform: rotate(-45deg);
+  width: 30px;
+}
+
+.navbarlist-wrapper button:checked ~ .icon-bar:after {
+  top: 0;
+  transform: rotate(45deg);
+  width: 30px;
 }/*# sourceMappingURL=main_scss.css.map */
