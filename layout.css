@@ -1,0 +1,58 @@
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.carousel .slide {
+  display: inline-block;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 2px;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+.carousel .slide.slide > img {
+  width: 100%;
+}
+.carousel .slide:hover {
+  transform: scale(1.05);
+}
+
+.prevbtn,
+.nextbtn {
+  position: absolute;
+  margin-top: 10px;
+  color: #fff;
+  background-color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  scale: 0.1;
+}
+.prevbtn:hover,
+.nextbtn:hover {
+  background-color: black;
+}
+.prevbtn:hover img,
+.nextbtn:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.prevbtn img,
+.nextbtn img {
+  scale: 0.4;
+}
+
+.prevbtn {
+  top: 107px;
+  left: -166px;
+}
+
+.nextbtn {
+  top: 107px;
+  right: -166px;
+}/*# sourceMappingURL=layout.css.map */

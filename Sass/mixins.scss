@@ -23,3 +23,10 @@
         transform: scale(1.05);
     }
 }
+
+
+@mixin carousel{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
